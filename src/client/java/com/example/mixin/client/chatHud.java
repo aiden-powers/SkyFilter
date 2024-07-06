@@ -15,12 +15,13 @@ public class chatHud {
     @Unique
     private final List<String> blockedTerms = Arrays.asList("lowballing", "/visit", "/p");
     @Inject(method = "addMessage(Lnet/minecraft/text/Text;Lnet/minecraft/network/message/MessageSignatureData;Lnet/minecraft/client/gui/hud/MessageIndicator;)V", at = @At("HEAD"), cancellable = true)
-    private void injected(net.minecraft.text.Text message, net.minecraft.network.message.MessageSignatureData signatureData, net.minecraft.client.gui.hud.MessageIndicator indicator, CallbackInfo ci) {
+    private void injected(net.minecraft.text.Text message, final net.minecraft.network.message.MessageSignatureData signatureData, final net.minecraft.client.gui.hud.MessageIndicator indicator, final CallbackInfo ci) {
         // Assuming textToString method exists and converts Text to String
-        String messageStr = textToString(message).toLowerCase();
-        for (String term : blockedTerms) {
+        final String messageStr = this.textToString(message).toLowerCase();
+        for (final String term : this.blockedTerms) {
             if (messageStr.contains(term)) {
                 System.out.println(term + " term blocked.");
+                message = net.minecraft.text.Text.of("[SkyFilter] Blocked Message");
                 ci.cancel(); // Cancel the method execution if a blocked term is found
                 return;
             }
