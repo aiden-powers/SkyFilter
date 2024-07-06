@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
     "id": "skyfilter",
-    "version": "0.100.3+1.21+v1",
+    "version": "0.100.3+1.21+v1.01",
     "name": "Skyfilter",
     "description": "Filters out easy-to-detect scam/spam messages in chat.",
 	"authors": [
@@ -15,9 +15,6 @@
 	"icon": "assets/modid/icon.png",
 	"environment": "*",
 	"entrypoints": {
-		"main": [
-			"com.example.ExampleMod"
-		],
 		"client": [
 			"com.example.ExampleModClient"
 		]
