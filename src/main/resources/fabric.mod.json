@@ -23,9 +23,9 @@
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
+      "skyfilter.mixins.json",
 		{
-			"config": "modid.client.mixins.json",
+			"config": "skyfilter.client.mixins.json",
 			"environment": "client"
 		}
 	],

@@ -11,7 +11,7 @@ import java.util.List;
 
 //net.minecraft.client.gui.hud.ChatHud
 @Mixin(targets = "net.minecraft.client.gui.hud.ChatHud")
-public class chatHud {
+public class chatHudmix {
     @Unique
     private final List<String> blockedTerms = Arrays.asList("lowballing", "/visit", "/p");
     @Inject(method = "addMessage(Lnet/minecraft/text/Text;Lnet/minecraft/network/message/MessageSignatureData;Lnet/minecraft/client/gui/hud/MessageIndicator;)V", at = @At("HEAD"), cancellable = true)
