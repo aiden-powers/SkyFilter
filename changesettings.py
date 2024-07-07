@@ -65,7 +65,7 @@ def change_mod_version(mod_version):
 
 
 if __name__ == "__main__":
-    mod_version = "v1.01"
+    mod_version = "v1.02"
     fabric = get_fabric_version()
     change_mod_version(fabric + "+" + mod_version)
     change_mod_name("Skyfilter")
