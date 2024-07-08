@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
     "id": "skyfilter",
-    "version": "0.100.3+1.21+v1.02",
+    "version": "0.100.3+1.21+v1.03",
     "name": "Skyfilter",
     "description": "Filters out easy-to-detect scam/spam messages in chat.",
 	"authors": [
