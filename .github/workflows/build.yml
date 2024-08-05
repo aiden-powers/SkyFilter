@@ -1,4 +1,4 @@
-name: combined-build
+name: combined-build # For this to run, the workflow needs read and write. And just to make sure, create and approve pull requests.
 on: [pull_request, push]
 
 jobs:
