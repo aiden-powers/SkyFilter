@@ -46,7 +46,7 @@ jobs:
       - name: find jar file
         id: find_jar
         run: |
-          JAR_FILE=$(find build/libs -name "skyfilter-*.jar")
+          JAR_FILE=$(find build/libs -name "skyfilter-*.jar" ! -name "*sources*.jar")
           JAR_BASENAME=$(basename "$JAR_FILE" .jar)
           echo "JAR_FILE=$JAR_FILE" >> $GITHUB_ENV
           echo "JAR_BASENAME=$JAR_BASENAME" >> $GITHUB_ENV
