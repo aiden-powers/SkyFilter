@@ -5,11 +5,10 @@
     "name": "Skyfilter",
     "description": "Filters out easy-to-detect scam/spam messages in chat.",
 	"authors": [
-		"Powersaj"
+		"Powersaj, AKA aiden-powers on github"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"me": "https://github.com/aiden-powers"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/modid/icon.png",
@@ -28,7 +27,7 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.15.11",
-		"minecraft": "~1.21",
+		"minecraft": "1.21.1",
 		"java": ">=21",
 		"fabric-api": "*"
 	},
